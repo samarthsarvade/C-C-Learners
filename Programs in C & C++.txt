@@ -1,0 +1,966 @@
+All C and Cpp Programs..
+
+// My First C Program
+#include <stdio.h>
+int main()
+{
+   printf("Talk To a Teacher\n");
+   return 0;
+}
+
+
+//My first C++ program
+#include <iostream>
+using namespace std;
+int main()
+{
+   cout <<"Talk To a teacher\n";
+   return 0;
+}
+
+
+// tokens in C
+#include <stdio.h>
+int main()
+{
+  int a = 2;
+  double const b = 4;
+  float c = 1.5;
+  char d = 'A';
+  printf("The value of a is %d\n",a);
+  printf("The value of b is %lf\n",b);
+  printf("The value of c is %.2f\n",c);
+  printf("The value of d is %c\n",d);
+  return 0;
+}
+
+
+// tokens in C++
+#include <iostream>
+using namespace std;
+int main()
+{
+  int a = 2;
+  double const b = 4;
+  
+  float c = 1.5;
+  char d = 'A';
+  cout<<"The value of a is "<<a<<"\n";
+  cout<<"The value of b is "<<b<<"\n";
+  cout<<"The value of c is "<<c<<"\n";
+  cout<<"The value of d is "<<d<<"\n";
+  return 0;
+}
+
+
+// Functions in C++
+#include <iostream>
+using namespace std;
+int add(int a, int b)
+{
+   int c = a + b;
+}
+int main()
+{
+   int sum;
+   sum=add(5,4);
+   cout<<"Sum is "<<sum<<"\n";
+   return 0;
+}
+
+
+// Functions in C
+#include <stdio.h>
+void add()
+{
+   int a = 2;
+   int b = 3;
+   int c = a + b;
+   printf("Sum of a and b is %d\n",c);
+}
+void main()
+{
+   add();
+}
+
+
+// Variables in C++
+#include <iostream>
+using namespace std;
+int a=5;
+int b=2;
+void add()
+{
+   int sum;
+   sum = a + b;
+   cout<<"Sum of a and b is "<<sum<<"\n";
+}
+int main()
+{
+   add();
+   return 0;
+}
+
+
+// Variable in C
+#include <stdio.h>
+int a=5;
+int b=2;
+void add()
+{
+   int sum;
+   sum = a + b;
+   printf("Sum of a and b is %d\n",sum);
+}
+int main()
+{
+   add();
+   return 0;
+}
+
+
+// Conditional Statements in C++
+#include <iostream>
+using namespace std;
+int main()
+{
+   int a,b,sum;
+   cout<<"Enter the value of a and b \n";
+   cin>>a>>b;
+   sum = a + b;
+   cout<<"Sum of a and b is "<<sum<<"\n";
+   if(sum > 20)
+   {
+       cout<<"Sum is greater than 20 \n";
+   }
+   else if(sum > 10)
+   {
+       cout<<"Sum is greater than 10 and less than 20\n";
+   }
+   else
+   {
+       cout<<"Sum is less than 10 \n";
+   }
+return 0;
+}
+
+
+// Conditional statements in C
+#include <stdio.h>
+int main()
+{
+   int a,b,sum;
+   printf("Enter the value of a and b \n");
+   scanf("%d%d",&a,&b);
+   sum = a + b;
+   printf("Sum of a and b is %d\n", sum);
+   if(sum > 20)
+   {
+       printf("Sum is greater than 20 \n");
+   }
+return 0;
+}
+
+
+// Nested if else in C++
+#include <iostream>
+using namespace std;
+int main() 
+{
+   int x, y;
+   cout<<"Enter a number between 0 to 39: ";
+   cin>>y;
+
+   if(y/10==0)
+   {
+     cout<<"you have entered the number in the range of 0 to 9\n";
+   }
+   else if(y/10==1)
+   {
+     cout<<"you have entered the number in the range of 10 to 19\n";
+   }
+   else if (y/10==2)
+   {
+     cout<<"you have entered number in the range of 20-29\n";
+   }
+   else if (y/10==3)
+   {
+     cout<<"you have entered number in the range of 30-39\n";
+   }  
+   else 
+   {
+     cout<<"number not in range \n";
+   }
+   return 0;
+}
+
+
+// Nested if else in C
+#include <stdio.h>
+int main() 
+{
+   int x, y;
+   printf("Enter a number between 0 to 39: ");
+   scanf("%d",&y);
+
+   if(y/10==0)
+   {
+     printf("you have entered the number in the range of 0 to 9\n");
+   }
+   else if(y/10==1)
+   {
+     printf("you have entered the number in the range of 10 to 19\n");
+   }
+   else if (y/10==2)
+   {
+     printf("you have entered number in the range of 20-29\n");
+   }
+   else if (y/10==3)
+   {
+     printf("you have entered number in the range of 30-39\n");
+   }
+   else 
+   {
+     printf("The number not in range \n");
+   }
+   return 0;
+}
+
+
+// Switch Statements in C++
+#include<iostream>
+using namespace std; 
+int main()
+{
+   int x, y;
+   cout<<"Enter a number between 0 to 39: ";
+   cin>>y;
+   x=y/10;
+   switch(x) 
+   {
+     case 0: 
+     cout<<"you have entered the number in the range of 0 to 9\n";
+     break;
+     case 1: 
+     cout<<"you have entered the number in the range of 10 to 19\n";
+     break;
+     case 2:
+     cout<<"you have entered number in the range of 20-29\n";
+     break;
+     case 3:
+     cout<<"you have entered number in the range of 30-39\n";
+     break;
+     default:
+     cout<<"number not in range \n";
+   } 
+   return 0;
+}
+
+
+// Switch St5atement in C
+#include <stdio.h>
+int main() 
+{
+   int x, y;
+   printf("enter a number between 0 to 39: ");
+   scanf("%d",&y);
+   x=y/10;
+   switch(x) 
+   {
+     case 0:
+     printf("you have entered the number in the range of 0 to 9\n");
+     break;
+     case 1: 
+     printf("you have entered the number in the range of 10 to 19\n");
+     break;
+     case 2:
+     printf("you have entered number in the range of 20-29\n");
+     break;
+     case 3:
+     printf("you have entered number in the range of 30-39\n");
+     break;
+     default:
+     printf("number not in range \n");
+   } 
+   return 0;
+}
+  
+
+//Increment and Decrement Operators in C
+#include <stdio.h>
+int main()
+{
+    int a=1;
+    printf("a's value is now %d\n", a++);
+    printf("a's value is now %d\n", a);
+    a=1;
+    printf("a's value is now %d\n", ++a);
+    printf("a's value is now %d\n", a);
+    a=1;
+    printf("a's value is now %d\n", a--);
+    printf("a's value is now %d\n", a);
+    a=1;
+    printf("a's value is now %d\n", --a);
+    printf("a's value is now %d\n", a);
+    return 0;
+}
+
+
+//Increment and Decrement Operators in C++
+#include <iostream>
+using namespace std;
+int main()
+{
+    int a=1;
+    cout<<"a's value is now "<<a++ <<"\n";
+    cout<<"a's value is now "<<a <<"\n";
+    a=1;
+    cout<<"a's value is now "<<++a <<"\n";
+    cout<<"a's value is now "<<a <<"\n";
+    a=1;
+    cout<<"a's value is now "<<a-- <<"\n";
+    cout<<"a's value is now "<<a <<"\n";
+    a=1;
+    cout<<"a's value is now "<<--a <<"\n";
+    cout<<"a's value is now "<<a <<"\n";
+    return 0;
+}
+    
+
+//Typecasting
+#include<stdio.h>
+int main()
+{
+   int a,b;
+   float c;
+   a=5;
+   b=2;
+   c=a/b;
+   printf("Value of c is %.2f\n",c);
+   c=(float)a/b;
+   printf("Value of c is %.2f\n",c);
+   return 0;
+}
+
+
+// Arithmetic Operators in C
+#include <stdio.h>
+int main()
+{
+    int a,b;
+    float c;
+    a = 5;
+    b = 2;
+    c = a + b;
+    printf("Sum of %d and %d is %.2f\n",a,b,c);
+    c = a * b;
+    printf("Product of %d and %d is %.2f\n",a,b,c);
+    c = a / b;
+    printf("Integer Division of %d and %d is %.2f\n",a,b,c);
+    c = (float)a / b;
+    printf("Real Division of %d and %d is %.2f\n",a,b,c);
+    return 0;
+}
+
+
+
+// Arithmetic Operators in C++
+#include <iostream>
+using namespace std;
+int main()
+{
+    int a,b;
+    float c;
+    a = 5;
+    b = 2;
+    c = a + b;
+    cout <<"Sum of " <<a <<" and " <<b <<" is " <<c <<"\n";
+    c = a * b;
+    cout <<"Product of " <<a <<" and " <<b <<" is " <<c <<"\n";
+    c = a / b;
+    cout <<"Integer Division of " <<a <<" and " <<b <<" is " <<c <<"\n";
+    c = (float)a / b;
+    cout <<"Real Division of " <<a <<" and " <<b <<" is " <<c <<"\n";
+    return 0;
+}
+
+    
+
+// Arithmetic Operators in C++
+#include <iostream>
+using namespace std;
+int main()
+{
+    int a,b;
+    float c;
+    a = 5;
+    b = 2;
+    c = a + b;
+    cout <<"Sum of " <<a <<" and " <<b <<" is " <<c <<"\n";
+    c = a * b;
+    cout <<"Product of " <<a <<" and " <<b <<" is " <<c <<"\n";
+    c = a / b;
+    cout <<"Integer Division of " <<a <<" and " <<b <<" is " <<c <<"\n";
+    c = (float)a / b;
+    cout <<"Real Division of " <<a <<" and " <<b <<" is " <<c <<"\n";
+    return 0;
+}
+
+    
+//Relational Operators in C
+#include <stdio.h>
+int main()
+{
+    int a,b;
+    printf("Enter the values of a and b \n");
+    scanf("%d %d",&a,&b);
+    if(a > b)
+    printf("%d is greater than %d\n",a,b);
+    else if(a < b)
+    printf("%d is less than %d\n",a,b);
+    if(a <= b)
+    printf("%d is less than or equal to %d\n",a,b);
+    else if(a >= b)
+    printf("%d is greater than or equal to %d\n",a,b);
+    if(a == b)
+    printf("%d is equal to %d\n",a,b);
+    else if (a != b)
+    printf("%d is not equal to %d\n",a,b);
+    return 0;
+}
+
+
+//Relational Operators in C++
+#include <iostream>
+using namespace std;
+int main()
+{
+    int a, b;
+    cout <<"Enter the values of a and b \n";
+    cin >>a >>b;
+    if(a > b)
+    cout <<a <<" is greater than " <<b <<"\n";
+    else if(a < b)
+    cout <<a <<" is less than " <<b <<"\n";
+    if(a <= b)
+    cout <<a <<" is less than or equal to " <<b <<"\n";
+    if(a >= b)
+    cout <<a <<" is greater than or equal to " <<b <<"\n";
+    if(a == b)
+    cout <<a <<" is equal to " <<b <<"\n";
+    else if (a != b)
+    cout <<a <<" is not equal to " <<b <<"\n";
+    return 0;
+}
+
+    
+//Logical operators in C++
+#include <iostream>
+using namespace std;
+int main()
+{
+   int a,b,c;
+   cout <<"Enter the values of a,b and c\n";
+   cin >>a >>b >>c;
+   if((a > b) && (a > c))
+   cout <<"a is greatest \n";
+   else if(b > c)
+   cout <<"b is greatest \n";
+   else
+   cout <<"c is greatest \n";
+   if((a == 0) || (b == 0) || (c == 0))
+   cout <<"The product of a, b and c is zero \n";
+   return 0;
+}
+
+ 
+//Logical operators in C
+#include <stdio.h>
+int main()
+{
+   int a,b,c;
+   printf("Enter the values of a,b and c\n");
+   scanf("%d %d %d", &a, &b, &c);
+   if((a > b) && (a > c))
+   printf("a is greatest \n");
+   else if(b > c)
+   printf("b is greatest \n");
+   else
+   printf("c is greatest \n");
+   if((a == 0) || (b == 0) || (c == 0))
+   printf("The product of a, b and c is zero \n");
+   return 0;
+}
+
+    
+// Loops in C by while
+#include<stdio.h>
+int main()
+{
+   int x=0;
+   int y=0;
+   do
+   {
+     y=y+x;
+     printf("%d\n",y);
+     x++;
+   }
+   while(x<=10);
+   return 0;
+}
+
+  
+
+// Loops in C++ by while
+#include<iostream>
+using namespace std;
+int main()
+{
+  int x=0;
+  int y=0;
+  do
+  {
+    y=y+x;
+    cout<<y<<"\n";
+    x++;
+  }
+  while(x<=10);
+  return 0;
+}
+
+
+// Loops in C by while
+#include<stdio.h>
+int main()
+{
+  int x=0;
+  int y=0;
+  while(x<=10)
+  {
+    y=y+x;
+    printf("%d\n",y);
+    x++;
+  }
+  return 0;
+}
+
+
+// Loops in C++ by while    
+#include<iostream>
+using namespace std;
+int main()
+{
+  int x=0;
+  int y=0;
+  while(x<=10)
+  {
+    y=y+x;
+    cout<<y<<"\n";
+    x++;
+  }
+  return 0;
+}
+
+    
+// Arrays in C++
+#include <iostream>
+using namespace std;
+int main()
+ {
+  int star[3]={4,5,6};
+  int sum;
+  sum = star[0] + star[1] + star[2];
+  cout<<"The sum is "<<sum<<"\n";
+  return 0;
+ }
+
+
+// Arrays in C
+#include <stdio.h>
+int main()
+ {
+  int star[3]={4,5,6};
+  int sum;
+  sum = star[0] + star[1] + star[2];
+  printf("The sum is %d\n",sum);
+  return 0;
+ }
+
+    
+//Two-dimensional arrays in C
+#include <stdio.h>
+int main()
+{
+   int i,j;
+   int num1[3][4],num2[3][4];
+   printf("Enter the elements of 3X4 array num1\n"); 
+   for(i=0; i<3; i++)
+   for(j=0; j<4; j++)
+   scanf("%d", &num1[i][j]);
+
+   printf("Enter the elements of 3X4 array num2\n"); 
+   for(i=0; i<3; i++)
+   for(j=0; j<4; j++)
+   scanf("%d", &num2[i][j]);
+
+   printf("The 3X4 array num1 is\n"); 
+   for(i=0; i<3; i++)
+    {
+      for(j=0; j<4; j++)
+      printf("%3d ", num1[i][j]);
+      printf("\n");
+    }
+   printf("The 3X4 array num2 is\n"); 
+   for(i=0; i<3; i++)
+    {
+      for(j=0; j<4; j++)
+      printf("%3d ", num2[i][j]);
+      printf("\n");
+    }
+   printf("The sum of num1 and num2 is\n");
+   for(i=0; i<3; i++)
+    {
+      for(j=0; j<4; j++)
+      printf("%3d ", (num1[i][j] + num2[i][j]));
+      printf("\n");
+    }
+   return 0;
+}
+
+
+//Two-dimensional arrays in C++
+#include <iostream>
+using namespace std;
+int main()
+{
+   int i,j;
+   int num1[3][4],num2[3][4];
+   cout <<"Enter the elements of 3X4 array num1\n"; 
+   for(i=0; i<3; i++)
+   for(j=0; j<4; j++)
+   cin>>num1[i][j];
+   
+   cout <<"Enter the elements of 3X4 array num2\n"; 
+   for(i=0; i<3; i++)
+   for(j=0; j<4; j++)
+   cin>>num2[i][j];
+   
+   cout <<"The 3X4 array num1 is\n"; 
+   for(i=0; i<3; i++)
+    {
+      for(j=0; j<4; j++)
+      cout<<num1[i][j] <<"\t";
+      cout<<"\n";
+    }
+
+   cout<<"The 3X4 array num2 is\n"; 
+   for(i=0; i<3; i++)
+    {
+      for(j=0; j<4; j++)
+      cout <<num2[i][j]<<"\t";
+      cout <<"\n";
+    }
+
+   cout<<"The sum of num1 and num2 is\n";
+   for(i=0; i<3; i++)
+    {
+      for(j=0; j<4; j++)
+      cout<<(num1[i][j] + num2[i][j])<<"\t";
+      cout<<"\n";
+    }
+   return 0;
+}
+
+
+// String in C
+#include<stdio.h>
+#include<string.h>
+int main()
+{
+  char strname[30];
+  printf("Enter the string\n");
+  scanf("%[^\n]s", strname);
+  printf("The string is %s\n", strname); 
+  return 0;
+}
+
+
+// Strings in C++
+#include<iostream>
+#include<string.h>
+using namespace std;
+int main()
+{
+  string strname;
+  cout<<"Enter the string\n";
+  getline(cin, strname);
+  cout<<"The string is "<<strname<<"\n"; 
+  return 0;
+}
+
+
+//String Initilization in C
+#include<stdio.h>
+#include<string.h>
+int main()
+{
+  char strname[30]="Spoken-Tutorial";
+  printf("The string is %s\n", strname); 
+  return 0;
+}
+
+    
+//String Compare
+
+#include<stdio.h>
+#include<string.h>
+int main()
+{
+   char str1[] = "Ice";
+   char str2[] = "Cream";
+   int i,j;
+   i = strcmp(str1,"Hello");
+   j = strcmp(str2,"Cream");
+   printf("%d, %d\n",i,j);
+
+return 0;
+}
+
+
+//String Copy
+
+#include<stdio.h>
+#include<string.h>
+int main()
+{
+   char source[] = "Ice";
+   char target[10];
+   strcpy(target, source);
+   printf("source string = %s\n",source);
+   printf("target string = %s\n",target);
+return 0;
+}
+
+
+
+//String Length
+
+#include<stdio.h>
+#include<string.h>
+int main()
+{
+  char arr[] = "Ashwini";
+  int len1 = strlen(arr);
+  printf("string = %s length = %d\n",arr, len1);
+return 0;
+}
+
+
+// Structures in C    
+#include <stdio.h>
+struct student 
+{
+  int eng;
+  int maths;
+  int science;
+};
+int main() 
+{
+  int total;
+  struct student stud;
+  stud.eng = 75;
+  stud.maths = 70;
+  stud.science = 65;
+  total = stud.eng + stud.maths + stud.science; 
+  printf("Total is %d\n",total);
+  return 0;
+}
+
+
+// Structures in C++    
+#include <iostream>
+using namespace std;
+struct student 
+{
+  int eng;
+  int maths;
+  int science;
+};
+int main() 
+{
+  int total;
+  struct student stud;
+  stud.eng = 75;
+  stud.maths = 70;
+  stud.science = 65;
+  total = stud.eng + stud.maths + stud.science; 
+  cout<<"Total is "<<total<<"\n";
+  return 0;
+}
+
+
+// Pointers in C    
+#include <stdio.h>
+void main()
+{
+   long int num = 10;      
+   long int *ptr;                  
+   printf("num's address: %p\n", &num);   
+   ptr = &num; 
+
+   printf("pointer's address: %p\n", &ptr);   
+
+   printf("pointer's size: %ld bytes\n", sizeof(ptr));  
+
+   printf("pointer's value: %p\n", ptr);   
+
+   printf("value pointed to: %ld\n", *ptr);  
+}
+
+
+// Pointers in C++
+#include <iostream>
+using namespace std;
+int main()
+{
+   long int num = 10;      
+   long int *ptr;                  
+   cout<<"num's address :"<< &num<<"\n";   
+   ptr = &num; 
+
+   cout<<"pointer's address :"<< &ptr<<"\n";   
+
+   cout<<"pointer's size bytes "<< sizeof(ptr)<<"\n";  
+
+   cout<<"pointer's value: "<< ptr<<"\n";   
+
+   cout<<"value pointed to: "<< *ptr<<"\n";  
+return 0;
+}
+
+
+// Function Call in C
+#include<stdio.h>
+int swap(int *a, int *b)
+{
+  int t;
+  t=*a;
+  *a=*b;
+  *b=t;
+}
+
+int main()
+{
+  int i, j;
+ 
+  printf("Enter the values ");
+  scanf("%d%d",&i,&j);
+ 
+  printf("Before swapping %d and  %d\n",i,j);
+ 
+  swap(&i,&j);
+ 
+  printf("After swapping %d and %d\n",i,j);
+
+return 0;
+}
+
+ 
+
+// Function Call in C++
+#include <iostream>
+using namespace std;
+
+int swap(int &x, int &y)
+{
+   int t;
+   t = x; 
+   x = y;    
+   y = t; 
+}  
+
+int main ()
+{
+  int a,b;
+  cout<< "Enter values of a and b\n";
+  cin>> a>>b;
+   
+  cout << "Before swapping a and b : " <<a <<" and " <<b <<"\n";
+
+   swap(a, b);
+
+   cout << "After swapping a and b : " << a <<" and " <<b <<"\n";
+ 
+   return 0;
+}
+
+
+
+// Function Call in C
+#include<stdio.h>
+int cube(int x)
+{
+  x=x*x*x;
+  return(x);
+}
+int main()
+{
+ int n=8;
+ printf("Cube of %d is %d\n",n,cube(n));
+ return 0;
+}
+
+   
+// File Handling in C    
+#include <stdio.h>
+int main()
+{
+  FILE *fp;
+  fp = fopen("/home/ttt/Desktop/sample.txt","w");
+  fprintf(fp,"Welcome to the spoken-tutorial 	       \n"); 
+  fprintf(fp,"This is a test example\n"); 
+  fclose(fp); 
+  return 0;
+}
+
+
+//File handling in C    
+#include <stdio.h>
+int main()
+{
+   FILE *fp;
+   char c;
+   fp = fopen("/home/ttt/Desktop/sample.txt","r");
+   if (fp == NULL)
+   printf("File doesn't exist\n");
+   else 
+   {
+     while (c != EOF)
+     {
+       c = getc(fp); 
+       putchar(c); 
+     }
+     fclose(fp);
+   }
+   return 0;
+}
+
+    
+
+
+
+    
+
+    
+
+
+    
+
+
+
+
+
+
+    
+
+
